@@ -1,0 +1,16 @@
+name: Release
+on:
+  push:
+    tags:
+      - "*"
+jobs:
+  call-continuous-integration-reusable:
+    uses: Poornachandra3/github-reusable-workflows/.github/workflows/relaese.yml@main
+    with:
+      project_name: expense-frontend
+      npm_install: false
+    secrets: inherit
+
+
+
+
