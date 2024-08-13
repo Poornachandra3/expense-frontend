@@ -4,7 +4,7 @@ on:
     tags:
       - "*"
 jobs:
-  call-continuous-integration-reusable:
+  call-release-reusable:
     uses: Poornachandra3/github-reusable-workflows/.github/workflows/release.yml@main
     with:
       project_name: expense-frontend
